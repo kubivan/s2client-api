@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.1)
 
 option(BUILD_API_EXAMPLES "Build Examples" ON)
 option(BUILD_API_TESTS "Build Tests" ON)
-project(cpp-sc2)
+project(s2client-api)
 
 # Use bin as the directory for all executables.
 # This will make protoc easy to find.
