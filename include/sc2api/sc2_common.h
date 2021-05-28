@@ -16,13 +16,13 @@ struct Point3D {
     float y;
     float z;
 
-    Point3D() :
+    constexpr Point3D() :
         x(0.0f),
         y(0.0f),
         z(0.0f) {
     }
 
-    Point3D(float in_x, float in_y, float in_z) :
+    constexpr Point3D(float in_x, float in_y, float in_z) :
         x(in_x),
         y(in_y),
         z(in_z) {
@@ -50,17 +50,17 @@ struct Point2D {
     float x;
     float y;
 
-    Point2D() :
+    constexpr Point2D() :
         x(0.0f),
         y(0.0f) {
     }
 
-    Point2D(Point3D a) :
+    constexpr Point2D(Point3D a) :
         x(a.x),
         y(a.y) {
     }
 
-    Point2D(float in_x, float in_y) :
+    constexpr Point2D(float in_x, float in_y) :
         x(in_x),
         y(in_y) {
     }
